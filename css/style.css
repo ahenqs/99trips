@@ -1,11 +1,16 @@
 @font-face {
-  font-family: "SpaceGrotesk-Regular";
-  src: url('../fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+    font-family: "SpaceGrotesk-Regular";
+    src: url('../fonts/SpaceGrotesk-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "SpaceGrotesk-Bold";
-  src: url('../fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+    font-family: "SpaceGrotesk-Bold";
+    src: url('../fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "SpaceGrotesk-Medium";
+    src: url('../fonts/SpaceGrotesk-Medium.ttf') format('truetype');
 }
 
 *,
@@ -15,7 +20,7 @@
 }
 
 a {
-    font-family: "SpaceGrotesk-Bold";
+    font-family: "SpaceGrotesk-Medium";
 }
 
 * {
@@ -25,12 +30,12 @@ a {
 }
 
 p b {
-    font-family: "SpaceGrotesk-Bold";
+    font-family: "SpaceGrotesk-Medium";
     color: #FFF;
 }
 
 h1, h3, h4, h5, h6 {
-    font-family: "SpaceGrotesk-Bold";
+    font-family: "SpaceGrotesk-Medium";
     color: #666;
     margin: 6px;
 }
@@ -61,14 +66,14 @@ a {
 }
 
 html {
-  -webkit-text-size-adjust: none; /* for iOS Safari */
-  text-size-adjust: none; /* for other mobile browsers */
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  html {
+    html {
         scroll-behavior: smooth;
-  }
+    }
 }
 
 :focus:not(:focus-visible) {
@@ -229,7 +234,6 @@ div.developer img, div.developer p {
     padding: 48px;
 }
 
-
 #content div.text h3, #content div.text h2 {
     margin: 0px;
     padding-top: 24px;
@@ -238,4 +242,10 @@ div.developer img, div.developer p {
 #content div.text h2 {
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+#content div.text h2, #content div.text h3 {
+    font-family: "SpaceGrotesk-Medium";
+    color: #666;
+    margin: 0;
 }
