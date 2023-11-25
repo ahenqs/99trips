@@ -1,98 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>99 Trips App</title>
-<meta name="description" content="A safe trip starts with good travel planning." />
-<meta name="author" content="André Henrique da Silva" />
-<meta property="og:title" content="99 Trips App" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="A safe trip starts with good travel planning." />
-<meta property="og:image" content="../images/logo.png" />
-<link rel="icon" href="../images/favicon.ico" />
-<link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
-<link rel="stylesheet" href="../css/style.css?v=1.0" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
-<script type="text/javascript" src="./scripts/loader.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Application 99 Voyages</title>
+    <meta name="description" content="Embarquez pour un voyage sans stress avec l'application 99 Voyages. Organisez et accédez facilement à tous vos voyages passés et à venir. Redéfinissez votre façon de voyager." />
+    <meta name="author" content="André Henrique da Silva" />
+    <meta property="og:title" content="Application 99 Voyages" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Embarquez pour un voyage sans stress avec l'application 99 Voyages. Organisez et accédez facilement à tous vos voyages passés et à venir. Redéfinissez votre façon de voyager." />
+    <meta property="og:image" content="../images/logo.png" />
+    <link rel="icon" href="../images/favicon.ico" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/style.css?v=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+    <script type="text/javascript" src="./scripts/loader.js" defer></script>
 </head>
 <body onload="loadData();">
-<div id="content">
-    <div id="menu">
-        <a href="../en-US/index.html"><span class="fi fi-us"></span></a>
-        <a href="../es-ES/index.html"><span class="fi fi-es"></span></a>
-        <a href="../pt-BR/index.html"><span class="fi fi-br"></span></a>
-        <a href="../fr-FR/index.html"><span class="fi fi-fr"></span></a>
-        <a href="../it/index.html"><span class="fi fi-it"></span></a>
-        <a href="" class="tinted" id="topDownloadAppHere"></a>
-    </div>
-    <div id="header">
-        <div>
-            <img src="../images/logo.png" width="100" />
+    <div id="content">
+        <div id="menu">
+            <a href="../en-US/index.html"><span class="fi fi-us"></span></a>
+            <a href="../es-ES/index.html"><span class="fi fi-es"></span></a>
+            <a href="../pt-BR/index.html"><span class="fi fi-br"></span></a>
+            <a href="../fr-FR/index.html"><span class="fi fi-fr"></span></a>
+            <a href="../it/index.html"><span class="fi fi-it"></span></a>
+            <a href="" class="tinted" id="topDownloadAppHere"></a>
         </div>
-        <div>
-            <h1 id="appTitle"></h1>
-            <h2 id="appSubtitle"></h2>
-        </div>
-    </div>
-    
-    <h3 id="text1"></h3>
-    <p id="subText1"></p>
-    <div class="gallery">
-      <img src="./images/11.png"class="device" />
-      <img src="./images/21.png"class="device" />
-    </div>
-    
-    <h3 id="text2"></h3>
-    <p id="subText2"></p>
-    <div class="gallery">
-      <img src="./images/12.png"class="device" />
-      <img src="./images/22.png"class="device" />
-    </div>
-    
-    
-    <h3 id="text3"></h3>
-    <p id="subText3"></p>
-    <div class="gallery">
-      <img src="./images/13.png"class="device" />
-      <img src="./images/23.png"class="device" />
-    </div>
-
-
-    <h3 id="text4"></h3>
-    <p id="subText4"></p>
-    
-    <div class="gallery">
-      <img src="./images/14.png"class="device" />
-      <img src="./images/24.png"class="device" />
-    </div>
-
-  
-    <h3 id="text5"></h3>
-    <p id="subText5"></p>
-    
-    <h3 id="text6"></h3>
-    <p id="subText6"></p>
-  
-    <div id="footer">
-        <div class="fcolumn">
-            <img src="../images/logo.png" width="100" />
-        </div>
-        <div class="fcolumn">
-            <h1 id="appTitleBottom"></h1>
-            <h2 id="appSubtitleBottom"></h2>
-            <div class="developer">
-                <img class="photo" src="../images/photo.jpg" />
-                <p id="developedBy"></p>
+        <div id="header">
+            <div>
+                <img src="../images/logo.png" width="100" />
+            </div>
+            <div>
+                <h1 id="appTitle"></h1>
+                <h2 id="appSubtitle"></h2>
             </div>
         </div>
-        <div class="spacer">&nbsp;</div>
-        <div class="fcolumn options">
-            <a href="" class="tinted" id="bottomDownloadAppHere"></a>
-            <a href="./privacy.html" class="tinted" id="privacyPolicy"></a>
-            <span href="./index.html" class="tinted" id="about"></span>
+
+        <div class="text">
+
+            <h2>Découvrez un voyage fluide avec 99 Voyages !</h2>
+
+            <p>Libérez la puissance d’expériences de voyage organisées et sans stress. Avec 99 Voyages, tous vos voyages passés et à venir sont stockés en toute sécurité dans un seul endroit pratique, vous garantissant ainsi d'avoir tout ce dont vous avez besoin à portée de main.</p>
+
+            <h3>Votre hub de voyage personnel</h3>
+            <p>Tous les détails essentiels – dates, lieux, documents, billets, etc. – regroupés sans effort pour une expérience de voyage sans tracas.</p>
+
+            <h3>Détails complets du lieu</h3>
+            <p>Plongez au cœur de vos destinations avec toutes les informations nécessaires à un voyage agréable. Explorez en toute confiance, armé d'informations sur chaque lieu que vous visitez.</p>
+
+            <h3>Navigation sans effort</h3>
+            <p>Découvrez le moyen le plus simple d'atteindre vos destinations. 99 Voyages offre une navigation transparente, vous assurant d'arriver à votre place sans effort.</p>
+
+            <h3>Synchronisation sur tous les appareils</h3>
+            <p>Vos souvenirs et projets de voyage sont parfaitement synchronisés avec iCloud. Accédez aux mêmes voyages sur tous vos appareils, vous assurant ainsi de rester connecté et organisé où que vous alliez.</p>
+
+            <p>Embarquez pour un voyage où chaque détail est méticuleusement géré et où chaque voyage est une joie. Téléchargez 99 Voyages maintenant et redéfinissez votre façon de voyager !</p>
+        </div>
+
+        <h3 id="text1"></h3>
+        <p id="subText1"></p>
+        <div class="gallery">
+            <img src="./images/11.png"class="device" />
+            <img src="./images/21.png"class="device" />
+        </div>
+
+        <h3 id="text2"></h3>
+        <p id="subText2"></p>
+        <div class="gallery">
+            <img src="./images/12.png"class="device" />
+            <img src="./images/22.png"class="device" />
+        </div>
+
+
+        <h3 id="text3"></h3>
+        <p id="subText3"></p>
+        <div class="gallery">
+            <img src="./images/13.png"class="device" />
+            <img src="./images/23.png"class="device" />
+        </div>
+
+
+        <h3 id="text4"></h3>
+        <p id="subText4"></p>
+
+        <div class="gallery">
+            <img src="./images/14.png"class="device" />
+            <img src="./images/24.png"class="device" />
+        </div>
+
+
+        <h3 id="text5"></h3>
+        <p id="subText5"></p>
+
+        <h3 id="text6"></h3>
+        <p id="subText6"></p>
+
+        <div class="text" id="support">
+            <h2 id="supportTitle"></h2>
+            <p id="supportThanks"></p>
+            <p id="supportMessage"></p>
+            <p><a href='&#109;ail&#116;&#111;&#58;&#104;&#101;&#108;&#108;%6F99ap&#112;%73&#64;gm%&#54;1%69l&#37;2Ecom'>he&#108;&#108;&#111;&#57;9&#97;p&#112;s&#64;&#103;ma&#105;&#108;&#46;c&#111;&#109;</a></p>
+            <p id="supportSLA"></p>
+        </div>
+
+        <br />
+        <p style="text-align: right; padding-right: 24px; font-size: 9pt;">Logo fait par <a href="https://www.flaticon.com/authors/gowi" title="GOWI"> GOWI </a> de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.</p>
+        <p style="text-align: right; padding-right: 24px; font-size: 9pt;" id="appleDisclaimer"></p>
+
+        <div id="footer">
+            <div class="fcolumn">
+                <img src="../images/logo.png" width="100" />
+            </div>
+            <div class="fcolumn">
+                <h1 id="appTitleBottom"></h1>
+                <h2 id="appSubtitleBottom"></h2>
+                <div class="developer">
+                    <img class="photo" src="../images/photo.jpg" />
+                    <p id="developedBy"></p>
+                </div>
+            </div>
+            <div class="spacer">&nbsp;</div>
+            <div class="fcolumn options">
+                <a href="" class="tinted" id="bottomDownloadAppHere"></a>
+                <a href="./privacy.html" class="tinted" id="privacyPolicy"></a>
+                <span href="./index.html" class="tinted" id="about"></span>
+                <a href="./index.html#support" class="tinted" id="supportLink"></a>
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>
