@@ -1,11 +1,12 @@
 function loadCommon() {
-    var appTitle = "99 Trips App";
-    var appSubtitle = "A safe trip starts with good travel planning";
-    var developedBy = "Created and developed by André Henrique da Silva &copy; 2023";
-    var downloadAppHere = "Download the app here";
-    var privacyPolicy = "Privacy Policy";
-    var about = "About the app";
-    
+    var appTitle = "Aplicación 99 Viajes";
+    var appSubtitle = "Un viaje seguro comienza con una buena planificación del viaje";
+    var developedBy = "Creado y desarollado por André Henrique da Silva &copy; 2023";
+    var downloadAppHere = "Descarga la aplicación aquí";
+    var privacyPolicy = "Política de Privacidad";
+    var about = "Sobre la aplicación";
+    var supportTitle = "Soporte Técnico";
+
     document.getElementById("appTitle").innerHTML = appTitle;
     document.getElementById("appSubtitle").innerHTML = appSubtitle;
     document.getElementById("appTitleBottom").innerHTML = appTitle;
@@ -15,25 +16,32 @@ function loadCommon() {
     document.getElementById("bottomDownloadAppHere").innerHTML = downloadAppHere;
     document.getElementById("privacyPolicy").innerHTML = privacyPolicy;
     document.getElementById("about").innerHTML = about;
-}
 
+    document.getElementById("supportLink").innerHTML = supportTitle;
+}
 
 function loadData() {
     loadCommon();
-    
-    var text1 = "All your trips";
-    var subText1 = "All your past and upcoming trips safely saved in one place.";
-    var text2 = "The best trip experience";
-    var subText2 = "Dates, places, documents, tickets and so much more.";
-    var text3 = "Never been easier";
-    var subText3 = "All the place details you need to have a lovely trip.";
-    var text4 = "How to get there?";
-    var subText4 = "The easiest way to get to your places.";
+
+    var text1 = "Todos tus viajes";
+    var subText1 = "Todos tus viajes pasados y futuros guardados de forma segura en un solo lugar.";
+    var text2 = "La mejor experiencia de viaje";
+    var subText2 = "Fechas, lugares, documentos, boletos y mucho más.";
+    var text3 = "Nunca ha sido tan fácil";
+    var subText3 = "Todos los detalles del lugar que necesitas para tener un viaje encantador.";
+    var text4 = "¿Cómo llegar?";
+    var subText4 = "La forma más fácil de llegar a tus lugares.";
     var text5 = "iCloud";
-    var subText5 = "Your trips are directly saved into your iCloud so you can have the same trips on all your devices.";
-    var text6 = "Stay tuned";
-    var subText6 = "More features will be added in the coming weeks. Make sure to download the app <a href=\"\" class=\"tinted\">here</a> and keep it updated.";
-    
+    var subText5 = "Tus viajes se guardan directamente en tu iCloud para que puedas tener los mismos viajes en todos tus dispositivos.";
+    var text6 = "Mantente al tanto";
+    var subText6 = "Se agregarán más funciones en las próximas semanas. Asegúrate de descargar la aplicación <a href=\"\" class=\"tinted\">aquí</a> y mantenla actualizada.";
+
+    var supportTitle = "Soporte Técnico";
+    var supportThanks = "Hola, ¡gracias por usar y apoyar la aplicación!";
+    var supportMessage = "Si tiene alguna solicitud, sugerencia, mejora o mejora de traducción, no dude en enviarme un correo electrónico a:";
+    var supportSLA = "Tendrás una respuesta en menos de 72 horas.";
+    var appleDisclaimer = "Apple Weather y  Weather son marcas registradas de Apple Inc.";
+
     document.getElementById("text1").innerHTML = text1;
     document.getElementById("subText1").innerHTML = subText1;
     document.getElementById("text2").innerHTML = text2;
@@ -46,4 +54,11 @@ function loadData() {
     document.getElementById("subText5").innerHTML = subText5;
     document.getElementById("text6").innerHTML = text6;
     document.getElementById("subText6").innerHTML = subText6;
+
+    document.getElementById("supportTitle").innerHTML = supportTitle;
+    document.getElementById("supportThanks").innerHTML = supportThanks;
+    document.getElementById("supportMessage").innerHTML = supportMessage;
+    document.getElementById("supportSLA").innerHTML = supportSLA;
+    document.getElementById("appleDisclaimer").innerHTML = appleDisclaimer;
+
 }
