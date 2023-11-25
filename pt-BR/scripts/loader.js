@@ -2,7 +2,7 @@ function loadCommon() {
     var appTitle = "Aplicativo 99 Viagens";
     var appSubtitle = "Uma viagem segura começa com um bom planejamento de viagem";
     var developedBy = "Criado e desenvolvido por André Henrique da Silva &copy; 2023";
-    var downloadAppHere = "Baixo o app aqui";
+    var downloadAppHere = "Baixe o app aqui";
     var privacyPolicy = "Política de Privacidade";
     var about = "Sobre o app";
     var supportTitle = "Suporte";
