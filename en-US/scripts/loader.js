@@ -20,7 +20,6 @@ function loadCommon() {
     document.getElementById("supportLink").innerHTML = supportTitle;
 }
 
-
 function loadData() {
     loadCommon();
 
